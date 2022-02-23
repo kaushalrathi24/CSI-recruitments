@@ -8,6 +8,12 @@
     src: url(./Fonts/Inter.ttf);
   }
 
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
 
 * { 
     margin: 0; 
@@ -40,6 +46,7 @@
 #img1{
     width: 50%;
     right: 0;
+
 }
 
 #content1{
@@ -194,3 +201,32 @@
     line-height: 24px;
     color: #474A57;
 }
+
+.typing{
+    font-family: Inter_bold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 98px;
+    color: #18191F;
+}
+
+.input-cursor{
+    display: inline-block;
+    width: 4px;
+    height: 72px;
+    background-color: #18191F;
+    margin-left: 8px;
+    line-height: 92px;
+    animation: blink .6s linear infinite alternate;
+}
+
+.slides{
+    width:1110px;
+    height:400px;
+    margin:auto;
+    border-radius: 8px;
+    display: none;
+}
+
+
